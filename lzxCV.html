@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhaoxu Liu | Academic Home</title>
+    <style>
+        /* --- CSS Styles --- */
+        :root {
+            --primary-color: #0056b3; /* Academic Blue */
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --secondary-bg: #f9f9f9;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-heading: 'Georgia', 'Times New Roman', serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .header-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Avatar Image Style */
+        .avatar-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f4f4f4;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Research Experience Styles */
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .exp-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        .exp-date {
+            font-size: 0.95rem;
+            color: #666;
+            font-family: var(--font-main);
+        }
+
+        .exp-lab {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest-tag {
+            background-color: var(--secondary-bg);
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            font-size: 0.95rem;
+            color: #444;
+            transition: all 0.3s ease;
+        }
+        
+        .interest-tag:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-style: normal;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+            }
+            .header-content {
+                margin-top: 20px;
+            }
+            .exp-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Zhaoxu Liu</h1>
+                <p>Undergraduate Student</p>
+                <p>School of Artificial Intelligence<br>
+                   <span style="color:#555;">Jilin University</span></p>
+            </div>
+            
+            <img src="avatar.jpg" alt="Zhaoxu Liu" class="avatar-img">
+            
+        </header>
+
+        <section id="about">
+            <h2>Biography</h2>
+            <p>
+                I am currently an undergraduate student at the <b>School of Artificial Intelligence, Jilin University</b>.
+            </p>
+            <p>
+                My research interests primarily focus on <b>Multimodal Learning</b> and <b>Reinforcement Learning</b>. I am dedicated to exploring how these technologies can be integrated to empower <b>Embodied AI</b> systems, enabling them to better perceive, understand, and interact with the complex physical world.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Research Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="exp-title">Research Intern / Undergraduate Researcher</span>
+                    <span class="exp-date">Nov. 2025 – Present</span>
+                </div>
+                <div class="exp-lab">Assistant Prof. Yu Li's Group, Jilin University</div>
+                <p>
+                    Focusing on <b>Multimodal Recommendation Systems</b>. Conducting research on how to effectively fuse different modalities (such as text, image, and user behavior) to improve recommendation accuracy and interpretability.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="interests">
+            <h2>Research Interests</h2>
+            <div class="interests-list">
+                <div class="interest-tag">Multimodal Learning</div>
+                <div class="interest-tag">Reinforcement Learning</div>
+                <div class="interest-tag">Embodied AI</div>
+                <div class="interest-tag">Deep Learning</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>
+                    <span class="icon">📧</span>
+                    <b>Email</b>: 
+                    <a href="mailto:lzhaoxv@outlook.com">lzhaoxv@outlook.com</a>
+                </li>
+                <li>
+                    <span class="icon">🐙</span>
+                    <b>GitHub</b>: 
+                    <a href="https://github.com/lzx-777-D" target="_blank">github.com/lzx-777-D</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Zhaoxu Liu. Powered by Minimalist Design.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
